@@ -1,0 +1,493 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    height: 80px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+.logo {
+    align-items: center;
+    height: 50px;
+}
+.perfil{
+    align-items: center;
+    height: 50px;
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 40px;
+}
+.navbar{
+    display: flex;
+}
+.navbar i{
+    font-size: 36px;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
+}
+
+.navbar-link{
+    font-family: 'Dancing Script', cursiva;
+    font-size: 23px;
+    font-weight: 500;
+    padding-right: 20px;
+    text-decoration: none;
+    background: linear-gradient(to right, #ffae00be, #ffffff , #ffae00be);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+}
+.navbar-link:hover{
+    color:antiquewhite;
+}
+
+@media (max-width:768px){
+    .navbar ul{
+        background: transparent;
+        backdrop-filter: blur(50px);
+        width: 100%;
+        height: calc(100vh - 80px);
+        position:absolute;
+        top:80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .navbar i{
+        display:block;
+    }
+    #toggle-menu:checked ~ .navbar-list{
+        display: flex;
+    }
+    .navbar-link{
+        font-size: 35px;
+    }
+    
+}
+
+#Hero{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px 20px;
+    background: url(imagenes/WhatsApp\ Image\ 2023-10-24\ at\ 00.20.54.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+.hero-texto{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+    gap: 10px;
+    padding: 60px;
+}
+
+
+.hero-texto h1{
+    font-family:'Bebas Neue', sans-serif;
+    width: 90%;
+    font-size: 70px;
+    font-weight: 800px;
+    background: linear-gradient(to right, #ffae00be, #ffffff , #ffae00be);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+}
+
+.hero-texto p{
+    font-family: 'Dancing Script', cursiva;
+    font-size: 20px;
+    padding: 8px 0;
+    width: 70%;
+    color: rgb(253, 253, 250);
+}
+
+.hero-boton{
+    gap:10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.boton{
+    background-color:goldenrod;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+.boton:hover{
+    background:linear-gradient(to right, #4568dc, #b06ab3);
+    color: black;
+}
+.boton2{
+    background-color:#ffffff;
+    text-decoration: none;
+    color:#ffae00be;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+.boton2:hover{
+    background:linear-gradient(to right, #4568dc, #b06ab3);
+    color: black;
+}
+
+#about-us{
+    display: flex;
+    background: black;
+    max-width: 1200px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    gap:30px;
+}
+#about-us h2{
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 60px;
+    font-weight: 800px;
+    background: linear-gradient(to right, #ffae00be, #ffffff , #ffae00be);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+}
+
+#about-us p{
+    font-family: 'Dancing Script', cursiva;
+    font-size: 20px;
+    color: rgb(253, 253, 250);
+    text-align: center;
+}
+
+#cards{
+    display: flex;
+    background: black;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding: 30px 0;
+}
+.curso{
+    background-color:lightgrey;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    width: 300px;
+    border-radius: 15px;
+}
+.curso:hover{
+    background:linear-gradient(to right, #3110a7, #bd0cc4);
+}
+.liga{
+    height: 50px;
+    display: flex;
+}
+
+.curso-info{
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.curso-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.curso-top h3{
+    white-space:nowrap ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.curso-top span{
+    background: #ffae00be;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.curso-boton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.tiempo-info p , .curso-precio p {
+    color: #ffae00be;
+    font-weight: 600;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.tiempo-info span {
+    white-space:nowrap ;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+}
+.curso-precio a{
+    color: black;
+    text-decoration: none;
+    background: #ffae00be;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600; 
+}
+.curso-precio a:hover{
+    background-color: black;
+    color:white;
+}
+
+#preguntas{
+    display: flex;
+    background: black;
+    max-width: 1200px;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+}
+.dudas{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 0;
+}
+.dudas h3{
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 60px;
+    font-weight: 800px;
+    background: linear-gradient(to right, #ffae00be, #ffffff);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+}
+.dudas span{
+    font-family: 'Dancing Script', cursiva;
+    font-size: 30px;
+    color: rgb(253, 253, 250);
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.cards-dudas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+    max-width: 300px;
+    border:#ffae00be 2px solid;
+    border-radius: 10px;
+
+ }
+.cards-dudas h3{
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 600px;
+    background: linear-gradient(to right, #ffae00be, #ffffff);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+}
+.cards-dudas p{
+    font-family: 'Dancing Script', cursiva;
+    font-size: 20px;
+    color: rgb(253, 253, 250);
+}
+
+#registro{
+    display: flex;
+    background: black;
+    max-width: 1200px;
+    width: 90%;
+    padding: 60px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registro{
+    width: 420px;
+    background: transparent;
+    border: 2px solid #ffae00be;
+    box-shadow: 0 0 10px black;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+
+.registro h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background: linear-gradient(to right, #ffae00be, #ffffff);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+}
+
+.registro .input-box{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.input-box input{
+    width: 95%;
+    height: 90%;
+    background: transparent;
+    border: none;
+    outline: none ;
+    border: 2px solid #ffae00be;
+    border-radius: 40px;
+    color: #ffffff;
+    padding: 20px 0px 20px 20px;
+    margin: 20px 0;
+}
+.input-box input:hover{
+    border:2px solid #ffae00be;
+}
+
+.input-box input::placeholder{
+    color: #ffffff;
+}
+
+.registro .btn{
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, #ffae00be, #ffffff);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 5px gray;
+    cursor:pointer;
+    font-size: 16px;
+    color: rgb(11, 19, 19);
+    font-weight: 600;
+}
+.registro .btn:hover{
+    background:linear-gradient(to right, #3110a7, #bd0cc4);
+}
+.registro .recordar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+}
+
+.recordar label input{
+    accent-color:white;
+    margin-right: 3px;
+}
+
+
+
+#contacto{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ffffff;
+    padding: 40px 0;
+}
+.contact-info-container{
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.info-container h2{
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 40px;
+    font-weight: 600px;
+    padding: 20px 0;
+}
+.info-contact h3{
+    font-family:'Dancing Script', cursiva;
+    font-size: 30px;
+    font-weight: 400px;
+}
+.info-contact{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.info-contact p , .info-contact a{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin:0;
+}
+.info-contact a{
+    text-decoration: none;
+    color:black;
+    gap:10px;
+}
+.info-contact a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background: black;
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+
+
+
+

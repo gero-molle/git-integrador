@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(imagenes/WhatsApp\ Image\ 2023-10-24\ at\ 00.20.54.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.login{
+    width: 420px;
+    background: transparent;
+    border: 2px solid gray;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px black;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    
+}
+
+.login h1{
+    font-size: 36px;
+    text-align: center;
+    background: linear-gradient(to right, #ffae00be, #ffffff);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip:text;
+}
+
+.login .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none ;
+    border: 2px solid gray;
+    border-radius: 40px;
+    color: #ffffff;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #ffffff;
+}
+
+.login .recordar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: -15px 0 15px;
+}
+
+.recordar label input{
+    accent-color:white;
+    margin-right: 3px;
+}
+.recordar a{
+    color:#ffffff;
+    text-decoration: none;
+}
+.recordar a:hover{
+    text-decoration: underline;
+}
+
+.login .btn{
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right, #ffae00be, #ffffff);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px gray;
+    cursor:pointer;
+    font-size: 16px;
+    color: darkslategrey;
+    font-weight: 600;
+}
+.login .btn:hover{
+    background:linear-gradient(to right, #3110a7, #bd0cc4);
+}
+
+.login .register-link{
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register-link p a {
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    color: darkgoldenrod;
+}
+.register-link a {
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link a:hover{
+    color: darkgoldenrod;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
